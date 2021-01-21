@@ -83,9 +83,23 @@ header {
 .main-title h1 {
   font-size: 45px;
   color: #fff;
+  margin-bottom: 15px;
 }
 
 .main-title a {
   text-decoration: none;
-  /* padding: 20px; */
+}
+
+.grey-area {
+  text-align: center;
+  background-color: #c1c1c1;
+}
+
+.grey-area h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.grey-text {
+  padding: 30px 0;
 }
