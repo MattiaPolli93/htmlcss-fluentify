@@ -128,7 +128,7 @@ header {
 
 .columns {
   height: 600px;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 .columns img {
@@ -150,20 +150,46 @@ header {
   margin-top: 30px;
 }
 
-
 .columns p {
   color: #868686;
 }
 
 .columns h2,
-p {
+.columns p {
   padding: 20px 15px;
 }
 
 hr {
-  color: #797979;
+  color: #989696;
 }
 
-/* .image-text {
-  height: 400px;
-} */
+/* Section with image and text */
+.image-text {
+  height: 500px;
+  padding: 5% 0;
+  position: relative;
+}
+
+.image-text h2 {
+  font-size: 35px;
+}
+
+.image-text p {
+  padding: 5% 0;
+}
+
+.image-text img {
+  width: 50%;
+}
+
+.image-text img,
+.right-text {
+  float: left;
+}
+
+.right-text {
+  width: 40%;
+  text-align: left;
+  position: absolute;
+  transform: translate(135%, 5%);
+}
