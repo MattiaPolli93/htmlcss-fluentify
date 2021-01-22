@@ -1,3 +1,4 @@
+/* Properties */
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +20,10 @@ body {
   margin: auto;
 }
 
+/* Header */
 header {
   background-color: #0C325A;
-  height: 500px;
+  height: 450px;
   background-image: url(../img/background-header.png);
   background-size: 70% 90%;
   background-repeat: no-repeat;
@@ -36,7 +38,7 @@ header {
 
 .logo {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .left-list,
@@ -45,20 +47,31 @@ header {
   padding: 15px 2px;
   margin-left: 20px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
+}
+
+/* Navbar */
+.main-navbar {
+  padding-top: 10px;
 }
 
 .main-navbar li {
   list-style: none;
   display: inline;
   font-size: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .main-navbar li a {
   text-decoration: none;
   color: #fff;
 }
+
+/* Buttons */
+/* .btn {
+  display: inline-block;
+  min-width: 80px;
+} */
 
 .login {
   border: 1px solid #fff;
@@ -74,10 +87,11 @@ header {
   color: #fff;
 }
 
+/* Main Title */
 .main-title {
   width: 50%;
   position: absolute;
-  top: 200px;
+  top: 170px;
 }
 
 .main-title h1 {
@@ -90,16 +104,66 @@ header {
   text-decoration: none;
 }
 
-.grey-area {
+/* Grey Section */
+.grey-section {
   text-align: center;
   background-color: #c1c1c1;
 }
 
-.grey-area h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
+.grey-section h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .grey-text {
   padding: 30px 0;
 }
+
+/* Three-Column Section */
+.features {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.columns {
+  height: 600px;
+  padding: 5% 0;
+}
+
+.columns img {
+  height: 180px;
+}
+
+.columns h2 {
+  color: #7CBB02;
+  font-size: 22px;
+}
+
+.columns h2::after {
+  display: block;
+  height: 1.5px;
+  background-color: #a3a3a2;
+  content: "";
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.columns p {
+  color: #868686;
+}
+
+.columns h2,
+p {
+  padding: 20px 15px;
+}
+
+hr {
+  color: #797979;
+}
+
+/* .image-text {
+  height: 400px;
+} */
