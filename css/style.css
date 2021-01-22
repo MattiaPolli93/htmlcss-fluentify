@@ -28,7 +28,7 @@ header {
   background-image: url(../img/background-header.png);
   background-size: 70% 90%;
   background-repeat: no-repeat;
-  background-position: 110% 210%;
+  background-position: 115% 210%;
 }
 
 .wrapper {
@@ -39,16 +39,24 @@ header {
 
 .logo {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
-.left-list,
-.right-list {
+.left-nav,
+.right-nav {
   text-transform: uppercase;
-  padding: 15px 2px;
-  margin-left: 20px;
   display: inline-block;
   vertical-align: top;
+}
+
+.left-nav {
+  padding: 15px 2px;
+  margin-left: 25px;
+}
+
+.right-nav {
+  padding: 15px 2px;
+  margin-left: 120px;
 }
 
 /* Navbar */
@@ -59,7 +67,7 @@ header {
 .main-navbar li {
   list-style: none;
   display: inline;
-  font-size: 12px;
+  font-size: 10px;
   margin-right: 8px;
 }
 
@@ -68,37 +76,37 @@ header {
   color: #fff;
 }
 
-/* Buttons */
-/* .btn {
-  display: inline-block;
-  min-width: 80px;
-} */
-
-.login {
+/* Buttons/Links */
+.login-btn {
   border: 1px solid #fff;
   padding: 5px 20px;
   border-radius: 5px;
 }
 
-.green-plan {
+.btn {
   border: 1px solid #7CBB02;
   border-radius: 5px;
   padding: 5px 15px;
   background-color: #7CBB02;
   color: #fff;
+  text-decoration: none;
+}
+
+.padded-btn {
+  padding: 16px;
 }
 
 /* Main Title */
 .main-title {
   width: 50%;
   position: absolute;
-  top: 170px;
+  transform: translate(0, 50%);
 }
 
 .main-title h1 {
   font-size: 45px;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .main-title a {
@@ -165,10 +173,10 @@ header {
 }
 
 hr {
-  color: #bababa;
+  color: #e9e9e9;
 }
 
-/* Section with image and text */
+/* Second-to-last Section */
 .image-text {
   height: 500px;
   padding: 5% 0;
@@ -196,26 +204,30 @@ hr {
   width: 40%;
   text-align: left;
   position: absolute;
-  transform: translate(135%, 5%);
+  transform: translate(155%, 5%);
 }
 
 /* Footer */
+.bottom-box {
+  height: 140px;
+}
+
 footer {
-  height: 200px;
+  height: 100px;
   position: relative;
   margin-top: 2%;
 }
 
 footer h2 {
   text-align: left;
-  width: 50%;
+  width: 30%;
   position: absolute;
   top: 50%;
 }
 
 .footer-text {
   color: #545454;
-  width: 50%;
+  width: 70%;
   position: absolute;
   right: 0;
   top: 50%;
@@ -225,7 +237,6 @@ footer h2 {
 .footer-text li {
   list-style: none;
   display: inline-block;
-  margin-left: 5%;
 }
 
 .input {
@@ -234,4 +245,12 @@ footer h2 {
   background-color: #c1c1c1;
   text-align: left;
   padding: 5px 80px 5px 0;
+  margin: 0 30px;
+}
+
+.bottom {
+  position: absolute;
+  width: 10%;
+  right: 6%;
+  text-align: center;
 }
